@@ -6,23 +6,32 @@
     <title>詭異泌尿科萬聖夜</title>
     <!-- 載入 Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* 使用 Inter 字體並加入一點點萬聖節的風格 */
-        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;700;900&display=swap');
+        /* 統一使用 Inter 字體 */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
         :root {
             --spooky-color: #ff4500; /* Deep Orange */
             --slime-color: #82e0aa; /* Slime Green */
         }
-        .spooky-text {
+        
+        /* 將所有文字統一為 Inter */
+        body, .spooky-text, .spooky-title {
             font-family: 'Inter', sans-serif;
-            text-shadow: 2px 2px 0 var(--spooky-color), 
-                         -2px -2px 0 var(--slime-color);
             transition: all 0.2s;
         }
+
+        .spooky-text {
+            /* 保持內文的萬聖節陰影 */
+            text-shadow: 2px 2px 0 var(--spooky-color), 
+                         -2px -2px 0 var(--slime-color);
+        }
+        
         .spooky-title {
-            font-family: 'Creepster', cursive;
+            /* 保持標題的萬聖節顏色與發光效果，但使用 Inter */
             color: var(--spooky-color);
             text-shadow: 0 0 10px var(--spooky-color), 0 0 20px #800080;
+            font-weight: 900; /* 使用更粗的字重來增加標題的衝擊力 */
         }
+
         .card-glow {
             box-shadow: 0 0 15px rgba(255, 69, 0, 0.6);
             transition: transform 0.3s ease-in-out;
@@ -42,12 +51,12 @@
 </head>
 <body class="bg-gray-900 text-gray-100 min-h-screen p-4 flex flex-col items-center">
     
-    <!-- 網頁主標題 --><header class="text-center mb-10 w-full max-w-4xl">
-        <h1 class="spooky-title text-6xl md:text-8xl my-4 tracking-wider">
+    <!-- 網頁主標題：字體大小已縮小，統一為 Inter --><header class="text-center mb-8 mt-4 w-full max-w-4xl">
+        <h1 class="spooky-title text-5xl md:text-7xl my-2 tracking-wider">
             泌尿科 <span class="text-lime-400">萬聖夜</span>
         </h1>
-        <p class="text-xl md:text-2xl text-yellow-200 spooky-text">
-            -- 腎結石？膀胱幽靈？來點不給糖就搗蛋！ --
+        <!-- 副標題已換行，保持置中 --><p class="text-xl md:text-2xl text-yellow-200 spooky-text">
+            -- 腎結石？膀胱幽靈？來點不給糖就<br>搗蛋！ --
         </p>
     </header>
 
