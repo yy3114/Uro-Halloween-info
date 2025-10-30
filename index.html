@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詭異泌尿科萬聖夜</title>
+    <!-- 載入 Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 使用 Inter 字體並加入一點點萬聖節的風格 */
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;700;900&display=swap');
+        :root {
+            --spooky-color: #ff4500; /* Deep Orange */
+            --slime-color: #82e0aa; /* Slime Green */
+        }
+        .spooky-text {
+            font-family: 'Inter', sans-serif;
+            text-shadow: 2px 2px 0 var(--spooky-color), 
+                         -2px -2px 0 var(--slime-color);
+            transition: all 0.2s;
+        }
+        .spooky-title {
+            font-family: 'Creepster', cursive;
+            color: var(--spooky-color);
+            text-shadow: 0 0 10px var(--spooky-color), 0 0 20px #800080;
+        }
+        .card-glow {
+            box-shadow: 0 0 15px rgba(255, 69, 0, 0.6);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card-glow:hover {
+            transform: scale(1.03) rotate(-1deg);
+        }
+        /* 額外添加一個恐怖按鈕動畫 */
+        .spooky-button-pulse {
+            animation: pulse-shadow 1.5s infinite;
+        }
+        @keyframes pulse-shadow {
+            0%, 100% { box-shadow: 0 0 15px var(--slime-color), 0 0 5px var(--spooky-color); }
+            50% { box-shadow: 0 0 25px var(--spooky-color), 0 0 10px var(--slime-color); }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen p-4 flex flex-col items-center">
+    
+    <!-- 網頁主標題 --><header class="text-center mb-10 w-full max-w-4xl">
+        <h1 class="spooky-title text-6xl md:text-8xl my-4 tracking-wider">
+            泌尿科 <span class="text-lime-400">萬聖夜</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-yellow-200 spooky-text">
+            -- 腎結石？膀胱幽靈？來點不給糖就搗蛋！ --
+        </p>
+    </header>
+
+    <!-- 內容卡片區域 --><main class="w-full max-w-4xl space-y-8">
+
+        <!-- 區塊 1: 幽靈腎結石 --><div class="bg-gray-800 p-6 rounded-xl card-glow border-2 border-orange-500/50">
+            <h2 class="text-4xl font-extrabold text-orange-400 mb-4 spooky-text">
+                <i class="fas fa-skull-crossbones"></i> 幽靈腎結石 (The Haunted Stone)
+            </h2>
+            <p class="text-lg text-gray-300">
+                這是最令人膽戰心驚的驚魂夜惡魔。它們在您的體內悄無聲息地生長，一旦開始移動... 疼痛的尖叫會比任何萬聖節恐怖片都更真實！我們提供最尖端的「碎石咒」服務，讓它們化為塵土。別讓這個小小的石頭成為您最可怕的噩夢！
+            </p>
+            <div class="mt-4 flex justify-center">
+                <!-- 腎結石圖片：已替換為您提供的圖片 --><img src="https://i.postimg.cc/h4bjpyGk/1000029150.jpg" 
+                     alt="[一塊幽靈腎結石的圖像]" 
+                     class="rounded-lg w-full max-w-sm"
+                >
+            </div>
+        </div>
+        
+        <!-- 區塊 2: 前列腺幻影 --><div class="bg-gray-800 p-6 rounded-xl card-glow border-2 border-red-600/50">
+            <h2 class="text-4xl font-extrabold text-red-500 mb-4 spooky-text">
+                <i class="fas fa-user-secret"></i> 前列腺幻影 (The Prostate Phantom)
+            </h2>
+            <p class="text-lg text-gray-300">
+                這是潛伏在午夜的無形之影，悄悄地勒緊您的尿道！當前列腺開始膨脹，排尿變成了一場永無止盡的滴答聲詛咒。您感覺排不乾淨？那是幻影在嘲笑您。面對它，別讓它掌控您的夜間生活！
+            </p>
+            <ul class="list-disc list-inside mt-4 text-gray-400">
+                <li><span class="text-yellow-400">緩慢的河流：</span> 排尿力道微弱，無法暢快。</li>
+                <li><span class="text-yellow-400">夜間的呼喚：</span> 幻影每隔一小時就將您從睡夢中叫醒。</li>
+            </ul>
+        </div>
+        
+        <!-- 區塊 3: 精蟲幽靈與生育噩夢 --><div class="bg-gray-800 p-6 rounded-xl card-glow border-2 border-blue-500/50">
+            <h2 class="text-4xl font-extrabold text-blue-400 mb-4 spooky-text">
+                <i class="fas fa-mask"></i> 精蟲幽靈與生育噩夢 (Sperm Phantoms)
+            </h2>
+            <p class="text-lg text-gray-300">
+                當您期待家庭新成員時，卻發現體內只有無數遊蕩的「幽靈精蟲」，它們缺乏活力，數量稀少。這不是一個容易擊敗的惡魔，但別害怕！我們有最強的藥水和「幽靈驅逐術」來增強您戰士的數量和速度！
+            </p>
+            <ul class="list-disc list-inside mt-4 text-gray-400">
+                <li><span class="text-teal-400">無形的威脅：</span> 精蟲數量或活動力異常。</li>
+                <li><span class="text-teal-400">尋找光芒：</span> 顯微鏡下尋找那些充滿希望的生命！</li>
+            </ul>
+        </div>
+
+        <!-- 區塊 4: 詭秘的膀胱迷霧 --><div class="bg-gray-800 p-6 rounded-xl card-glow border-2 border-purple-500/50">
+            <h2 class="text-4xl font-extrabold text-purple-400 mb-4 spooky-text">
+                <i class="fas fa-flask"></i> 詭秘的膀胱迷霧 (Bladder Fog)
+            </h2>
+            <p class="text-lg text-gray-300">
+                您是否感到頻尿？夜間難眠？也許您的膀胱裡住進了一隻頑皮的夜行幽靈，它不斷低語著「去廁所...去廁所...」。別害怕，這可能是膀胱過動症，我們可以為您驅逐這些夜間的困擾！
+            </p>
+            <ul class="list-disc list-inside mt-4 text-gray-400">
+                <li><span class="text-lime-400">午夜喚醒：</span> 每晚至少三次？</li>
+                <li><span class="text-lime-400">急迫的詛咒：</span> 突然間必須找到廁所？</li>
+            </ul>
+        </div>
+        
+        <!-- 區塊 5: 萬聖節詭異知識生成器 (總共 12 條) --><div class="bg-gray-800 p-6 rounded-xl card-glow border-2 border-lime-500/50 text-center">
+            <h2 class="text-4xl font-extrabold text-lime-400 mb-4 spooky-text">
+                <i class="fas fa-book-dead"></i> 詭異泌尿知識
+            </h2>
+            <p id="spookyFact" class="text-2xl text-yellow-100 italic mb-6 min-h-[5rem] flex items-center justify-center">
+                點擊按鈕，揭開泌尿系統最深處的恐怖真相...
+            </p>
+            <button id="factButton" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 shadow-xl transform hover:scale-105 active:scale-95 border-2 border-black spooky-text spooky-button-pulse" onclick="generateSpookyFact()">
+                不給糖就搗蛋！</button>
+        </div>
+
+    </main>
+
+    <!-- 頁腳 --><footer class="mt-10 mb-4 text-center text-gray-500 text-sm w-full max-w-4xl">
+        <p>祝您有一個「暢通無阻」的萬聖節！ 😈</p>
+    </footer>
+
+    <!-- Font Awesome for Icons --><script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+    <script>
+        // 萬聖節泌尿知識庫 (總共 12 條，已確認內容唯一性)
+        const spookyFacts = [
+            // 第一條：腎臟過濾量 (Unique Fact)
+            "一個成年人的腎臟，每天要過濾約180公升的血液，比一個浴缸的水還多！", 
+            // 第二條：最大腎結石 (Unique Fact)
+            "有史以來最大的腎結石重達1.1公斤，簡直是一個可怕的「石頭南瓜」！", 
+            // 第三條：血尿現象 (Unique Fact)
+            "在某些情況下，膀胱感染可能會導致尿液呈粉紅色或紅色，像吸血鬼的飲料！", 
+            // 第四條：一生排尿次數 (Unique Fact, 內容與第一條不同)
+            "平均來說，人一生中會排尿超過75,000次，這是一個驚人的數字！", 
+            // 第五條：腎臟自修復能力 (Unique Fact)
+            "腎臟是唯一能自我修復和再生的小型器官之一，簡直是體內的弗蘭肯斯坦！", 
+            // 第六條：男性尿道長度與滴瀝 (Unique Fact)
+            "男性尿道比女性長得多，這讓男性更容易體驗到可怕的「排尿後滴瀝詛咒」。", 
+            // 第七條：尿液的無菌性 (Unique Fact)
+            "尿液在體內是無菌的（除非有感染），所以別擔心，那不是真正的幽靈之水！", 
+            // 第八條：夜間多尿 (Unique Fact)
+            "有時候，喝太多水會讓您在半夜不斷被尿意驚醒，這是最常見的萬聖節夜間搗蛋鬼！",
+            // 第九條：膀胱容量 (Unique Fact)
+            "男性的膀胱容量大約是 300 到 400 毫升，但緊急時它可以膨脹到兩倍大，像一個被充氣的氣球怪物！",
+            // 第十條：輸尿管結石疼痛 (Unique Fact)
+            "輸尿管結石引起的疼痛被認為是人類已知最劇烈的疼痛之一，甚至比分娩還要可怕！",
+            // 第十一條：古代尿液用途 (Unique Fact)
+            "在某些古代文化中，尿液被用作清潔劑甚至漂白劑——想起來有點毛骨悚然吧？",
+            // 第十二條：無尿意症狀 (Unique Fact)
+            "如果你感覺不到尿意，這可能是一種罕見的疾病，讓你的膀胱像一個永遠不會滿的無底洞！",
+        ];
+
+        let lastFactIndex = -1;
+        // 新增狀態來追蹤是否已經點擊過
+        let hasBeenClicked = false; 
+        const subsequentTexts = ["再來一個詛咒！", "下一條幽靈消息...", "再嚇我一次！", "揭開更多真相"];
+
+
+        /**
+         * 隨機生成並顯示一個詭異泌尿知識。
+         */
+        function generateSpookyFact() {
+            const factElement = document.getElementById('spookyFact');
+            const buttonElement = document.getElementById('factButton');
+            let randomIndex;
+
+            // 確保不會連續兩次拿到相同的知識
+            do {
+                randomIndex = Math.floor(Math.random() * spookyFacts.length);
+            } while (randomIndex === lastFactIndex);
+            
+            lastFactIndex = randomIndex;
+            
+            // 處理按鈕文字的動態變化
+            if (hasBeenClicked) {
+                 // 後續點擊：隨機選擇一個新的按鈕文字
+                buttonElement.textContent = subsequentTexts[Math.floor(Math.random() * subsequentTexts.length)];
+            } else {
+                // 首次點擊：標記為已點擊
+                hasBeenClicked = true;
+                // 首次點擊後將文字設定為更具引導性的內容
+                buttonElement.textContent = "再來一個詛咒！"; 
+            }
+            
+            // 加入特效
+            factElement.classList.add('opacity-0', 'scale-90', 'transition', 'duration-300');
+            buttonElement.disabled = true;
+
+            setTimeout(() => {
+                factElement.textContent = spookyFacts[randomIndex];
+                // 移除特效
+                factElement.classList.remove('opacity-0', 'scale-90');
+                buttonElement.disabled = false;
+            }, 300);
+        }
+
+        // 載入時先初始化第一個知識
+        window.onload = () => {
+             // 確保所有資源（包括腳本）都已載入
+             generateSpookyFact();
+        }
+    </script>
+</body>
+</html>
+
